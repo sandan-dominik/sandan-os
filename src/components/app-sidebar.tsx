@@ -2,23 +2,14 @@
 
 import * as React from "react"
 import {
-  IconCamera,
   IconChartBar,
-  IconDatabase,
-  IconFileAi,
-  IconFileDescription,
-  IconHelp,
   IconInnerShadowTop,
   IconMovie,
-  IconRocket,
   IconSearch,
-  IconSettings,
   IconMessageCircle,
   IconDashboard,
   IconStar,
 } from "@tabler/icons-react"
-
-import { NavCreativeOS } from "@/components/nav-creative-os"
 import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
@@ -29,7 +20,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { NavPerformanceOS } from "./nav-performance-os"
 import { NavOS } from "./nav-os"
 
 const data = {
@@ -38,73 +28,6 @@ const data = {
     email: "nico@sandan.ai",
     avatar: "/avatars/shadcn.jpg",
   },
-  navMain: [
-  ],
-  navClouds: [
-    {
-      title: "Capture",
-      icon: IconCamera,
-      isActive: true,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Proposal",
-      icon: IconFileDescription,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Prompts",
-      icon: IconFileAi,
-      url: "#",
-      items: [
-        {
-          title: "Active Proposals",
-          url: "#",
-        },
-        {
-          title: "Archived",
-          url: "#",
-        },
-      ],
-    },
-  ],
-  navSecondary: [
-    {
-      title: "Settings",
-      url: "#",
-      icon: IconSettings,
-    },
-    {
-      title: "Get Help",
-      url: "#",
-      icon: IconHelp,
-    },
-    {
-      title: "Search",
-      url: "#",
-      icon: IconSearch,
-    },
-  ],
   creativeOS: [
     {
       name: "B-Roll Analyzer",
@@ -120,7 +43,7 @@ const data = {
   performanceOS: [
     {
       name: "Dashboard",
-      url: "#",
+      url: "/performance-os",
       icon: IconDashboard,
       tag: [{
         label: "Get access",
@@ -130,7 +53,7 @@ const data = {
     },
     {
       name: "Ad Fatigue Tracker",
-      url: "#",
+      url: "/performance-os",
       icon: IconChartBar,
       tag: [{
         label: "Get access",
@@ -142,7 +65,7 @@ const data = {
   marketingOS: [
     {
       name: "Comment Guard",
-      url: "#",
+      url: "/marketing-os",
       icon: IconMessageCircle,
       tag: [{
         label: "Get access",
@@ -152,7 +75,7 @@ const data = {
     },
     {
       name: "GEO",
-      url: "#",
+      url: "/marketing-os",
       icon: IconSearch,
       tag: [{
         label: "Get access",
@@ -164,7 +87,7 @@ const data = {
   ecommerceOS: [
     {
       name: "Reviews AI",
-      url: "#",
+      url: "/ecommerce-os",
       icon: IconStar,
       tag: [{
         label: "Get access",
